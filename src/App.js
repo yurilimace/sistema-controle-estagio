@@ -1,10 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Input from './Components/input'
+import Form from './Components/Form'
+import Login from './Screens/login'
 function App() {
   return (
     <div className="App">
+      <Login/>
     </div>
   );
 }
