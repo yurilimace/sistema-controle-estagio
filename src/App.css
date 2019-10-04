@@ -20,3 +20,138 @@
 .App-link {
   color: #09d3ac;
 }
+
+body {
+  background: #FAFAFA;
+}
+
+h3 {
+  color: white;
+}
+
+.mdl-grid {
+  min-height: 680px;
+  color: lightcoral !important;
+}
+
+.gray_background {
+  background: #eee;
+  opacity: 0.8;
+  min-height: 50px;
+  border-radius: 5px;
+}
+
+.transparente {
+  background: url("https://blogs.funiber.org/pt/wp-content/uploads/2018/04/funiber-escape-room-768x576.jpg") center / cover;
+
+}
+
+nav.mdl-navigation .mdl-badge[data-badge]:after {
+  top: 5px;
+  right: -8px;
+}
+
+@media screen and (max-width : 475px) {
+  .hide_phone {
+      display: none;
+  }
+}
+
+nav.mdl-navigation .mdl-badge[data-badge]:after {
+  right: 5px;
+}
+
+@media screen and (min-width : 474px) {
+  .show_phone {
+      display: none;
+  }
+}
+
+nav.mdl-navigation .mdl-badge[data-badge]:after {
+  right: 5px;
+}
+
+.md-18 {
+  font-size: 18px;
+}
+
+.md-24 {
+  font-size: 24px;
+}
+
+.md-36 {
+  font-size: 36px;
+}
+
+.md-48 {
+  font-size: 48px;
+}
+
+.orange {
+  color: #fb8c00;
+}
+
+.green {
+  color: #AAC639;
+}
+
+.showing-card {
+  width: 512px;
+}
+
+.showing-card>.mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/a/a0/Jan_Davidszoon_de_Heem_-_Still-Life_of_Books.JPG") center / cover;
+}
+
+.showing-card>.mdl-card__menu {
+  color: orange;
+}
+
+.mdl-card__title-text {
+  text-shadow: black 2px 2px 4px;
+}
+
+.container-menu {
+  position: relative;
+  width: 200px;
+  display: inline-block;
+  margin: 5px;
+  vertical-align: top;
+}
+
+.bar-menu-left,
+.bar-menu-right {
+  box-sizing: border-box;
+  background: #3F51B5;
+  color: white;
+  width: 100%;
+  padding: 16px;
+}
+
+.background-menu {
+  background: white;
+  height: 148px;
+  widows: 100%;
+}
+
+.bar-menu-right {
+  text-align: right;
+}
+
+.bar-menu-left {
+  text-align: left;
+}
+
+.mdl-menu__item a{
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+
+}
+
+.mdl-menu__item a:horizontal{
+  color: rgba(0, 0, 0, 87);
+  text-decoration: none;
+
+}
