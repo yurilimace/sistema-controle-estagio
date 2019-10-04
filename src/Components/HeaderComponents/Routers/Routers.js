@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from "../../PageComponents/Home";
 import Contact from '../../PageComponents/Contact';
@@ -15,10 +15,10 @@ const AppRouter = () => (
             <Switch>
                 <Route path='/' component={Home} exact={true} />
                 <Route path='/help' component={Helper} />
-                 <Route path='/contact' component={Contact} />
+                <Route path='/contact' component={Contact} />
                 <Route component={NotFoundPage} />
             </Switch>
-            <Footer/>
+            <Footer />
         </div>
     </BrowserRouter>
 );
