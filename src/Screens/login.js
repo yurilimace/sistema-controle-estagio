@@ -30,7 +30,6 @@ class Login extends Component{
 }
 
 const StyledIcon = styled.div`
-border:1px solid red;
 display:inline-block;
 position:relative;
 top:-250px;
@@ -58,7 +57,7 @@ margin-top:22%;
 const StyledLogin = styled(Login)`
     width:100vw;
     height:100vh;
-    background:#00bd56;
+    background:#F58212;
 `;
 
 export default StyledLogin

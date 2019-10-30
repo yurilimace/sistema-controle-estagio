@@ -1,10 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-const Home = ()=>{
+import SideBar from '../Components/sideBar'
 
+const Home = (props)=>{
     return(
-        <div>
-            <h2> Teste </h2>
+        <div className={props.className}>
+            <div >
+                <SideBar/>
+            </div>
+            <div>
+                <h2> Lembretes </h2>
+            </div>
         </div>
     )
 }
@@ -12,4 +18,10 @@ const Home = ()=>{
 
 
 
-export default Home
+const Styledhome = styled(Home)`
+    display:grid;
+    grid-template-columns: 20vw auto auto;
+`;
+
+
+export default Styledhome   

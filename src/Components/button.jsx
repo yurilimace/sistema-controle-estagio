@@ -17,8 +17,12 @@ const StyledButton = styled(button)`
     border:${props=>props.border};
     border-radius:${props=>props.radius};
     background-color:${props=>props.color};
-    color:${props=>props.fontcolor}
+    color:${props=>props.fontcolor};
     font-size:${props=>props.fsize};
+    &:hover{
+        background-color:${props=>props.hover};
+    }
+    
 `;
 
 
