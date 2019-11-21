@@ -34,11 +34,11 @@ const Menu = (props)=>{
 
 const SideBar = (props) =>{
     return(
-        <div>
+        <div className={props.className}>
           <div>
             <Userinfo/>
           </div>
-          <div  className={props.className}>
+          <div >
              <Menu/>
           </div>
         </div>
@@ -52,9 +52,9 @@ const SideBar = (props) =>{
 
 
 const Styledside = styled(SideBar)`
+    height:100%;
     background: #F58212;
-    height:100vh;
-
+    align-items: center;
 `;
 
 export default Styledside;

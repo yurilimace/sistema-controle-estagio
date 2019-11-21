@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import Input from './input'
 import Button from './button'
 import {Redirect,withRouter} from 'react-dom'
+
+
+
 class Form extends Component{
     constructor(props){
         super(props)

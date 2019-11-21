@@ -17,6 +17,7 @@ border-radius: ${props=>props.radius};
 font-size:${props=>props.fsize};
 caret-color:${props=>props.caret};
 padding-left:${props=>props.padding};
+top:${props=>props.top};
 &:focus{
     outline: none;
     box-shadow: 0 0 5px rgba(81, 203, 238,1);

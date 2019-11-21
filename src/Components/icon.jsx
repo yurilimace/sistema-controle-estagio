@@ -1,7 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import styled from 'styled-components'
-import { SSL_OP_NO_COMPRESSION } from 'constants'
+
+
 
 const Icon = (props) =>{
     return (
