@@ -12,13 +12,15 @@ import {faUserGraduate} from '@fortawesome/free-solid-svg-icons'
 class Login extends Component{
     constructor(props){
         super(props)
+        
     }
 
    
 
     render(){
         return(
-            <div className={this.props.className}>
+            <div className={this.props.className} >
+               
                <StyledIcon>
                     <FontAwesomeIcon icon={faUserGraduate} size="10x" color="white" /> 
                     <h3>  SCE </h3>
@@ -35,21 +37,21 @@ const StyledIcon = styled.div`
 display:inline-block;
 position:relative;
 top:-250px;
-left:350px;
-
-
-
+left:270px;
+ 
 `;
 
 
 const StyledDiv = styled.div`
 width: 550px;
 display:inline-block;
+position:relative;
+
 text-align: center;
-margin: auto;
+right:5%
 margin-top: 1%;
 height: 300px;
-background-color: white;
+background-color:#faf5ef;
 border-radius: 10px;
 margin-top:22%;
 
