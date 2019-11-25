@@ -4,6 +4,7 @@ import SideBar from '../Components/sideBar'
 import Input from '../Components/input'
 import Interform from '../Components/intershipForm'
 import Companyform from '../Components/companyForm'
+import Multi from '../Components/multiStepForm'
 import {BrowserRouter,Route,Switch,Link} from "react-router-dom"
 
 const Home = (props)=>{
@@ -13,16 +14,7 @@ const Home = (props)=>{
                 <SideBar/>
             </div>
             <div style={{border:'1px solid red',height:'100%',width:'100%'}}>
-                <BrowserRouter>
-                    <Switch>
-                        <Route path='/step1'>    
-                            <Interform></Interform>
-                        </Route>
-                        <Route path='/step2'>
-                            <Companyform/>
-                        </Route>
-                    </Switch>
-                </BrowserRouter>   
+                <Multi/>
             </div>
         </div>
     )

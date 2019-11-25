@@ -22,6 +22,7 @@ class Form extends Component{
     handleLogin = () =>{
         console.log('entrou')
         console.log(this.state)
+        
     }
 
     handleSubmit = (event) =>{

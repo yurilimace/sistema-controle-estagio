@@ -3,10 +3,11 @@ import styled from 'styled-components'
 import Input from './input'
 import Button from './button'
 import {BrowserRouter,Route,Switch,Link} from "react-router-dom"
+import FormHoC from '../Hoc/Hoc-Form'
 class Intershipform extends Component{
     constructor(props){
         super(props)
-        this.state = {name:'',}
+        
     }
 
     handleSubmit = (event) =>{
@@ -24,37 +25,35 @@ class Intershipform extends Component{
                     <h3 style={{paddingTop:'25px',color:'black'}}>  Dados Pessoais  </h3>
                     <Input width='50%' height='50px' margin='10px' 
                         border='2px solid rgb(230, 233, 240)' radius ='10px' fsize='16px'
-                        caret=':rgba(230, 233, 240, 1)'placeholder="Nome">
+                        caret=':rgba(230, 233, 240, 1)'placeholder="Nome" name='name' onChange={this.props.handleChange}>
                     </Input>
                     <Input width='50%' height='50px' margin='10px' 
                         border='2px solid rgb(230, 233, 240)' radius ='10px' fsize='16px'
-                        caret=':rgba(230, 233, 240, 1)'placeholder="Matriula">
+                        caret=':rgba(230, 233, 240, 1)'placeholder="Matriula" name='matricula'onChange={this.props.handleChange} >
                     </Input>
                     <Input width='50%' height='50px' margin='10px' 
                         border='2px solid rgb(230, 233, 240)' radius ='10px' fsize='16px'
-                        caret=':rgba(230, 233, 240, 1)'placeholder="RG">
+                        caret=':rgba(230, 233, 240, 1)'placeholder="RG" name='rg' onChange={this.props.handleChange} >
                     </Input>
                     <Input width='50%' height='50px' margin='10px' 
                         border='2px solid rgb(230, 233, 240)' radius ='10px' fsize='16px'
-                        caret=':rgba(230, 233, 240, 1)'placeholder="CPF">
+                        caret=':rgba(230, 233, 240, 1)'placeholder="CPF" name='cpf'onChange={this.props.handleChange} >
                     </Input>
                     <Input width='50%' height='50px' margin='10px' 
                         border='2px solid rgb(230, 233, 240)' radius ='10px' fsize='16px'
-                        caret=':rgba(230, 233, 240, 1)'placeholder="data de nascimento">
+                        caret=':rgba(230, 233, 240, 1)'placeholder="data de nascimento" name='data_nasc' onChange={this.props.handleChange}>
                     </Input>
                     <Input width='50%' height='50px' margin='10px' 
                         border='2px solid rgb(230, 233, 240)' radius ='10px' fsize='16px'
-                        caret=':rgba(230, 233, 240, 1)'placeholder="Curso">
+                        caret=':rgba(230, 233, 240, 1)'placeholder="Curso" name='curso'onChange={this.props.handleChange} >
                     </Input>
                     <Input width='50%' height='50px' margin='0px 0px 20px 0px' 
                         border='2px solid rgb(230, 233, 240)' radius ='10px' fsize='16px'
-                        caret=':rgba(230, 233, 240, 1)'placeholder="Semestre">
+                        caret=':rgba(230, 233, 240, 1)'placeholder="Semestre" name='semestre'onChange={this.props.handleChange} >
                     </Input>
                     <div>
-                        <Link to='/step2'>
-                            <Button text='Proximo' margin='15px 0 0 0 ' color='#F58212' border='none' radius='5px' 
-                            height='50px' width='50%' fontcolor='white' fsize='18px' />
-                        </Link>
+                        <Button text='Proximo' margin='15px 0 0 0 ' color='#F58212' border='none' radius='5px' 
+                        height='50px' width='50%' fontcolor='white' fsize='18px' onClick={this.props.addStep} />  
                     </div>
                 </form>
             </div>
@@ -70,4 +69,4 @@ const StyledIntership = styled(Intershipform)`
 
 `;
 
-export default StyledIntership
+export default  StyledIntership
