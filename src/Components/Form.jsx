@@ -9,7 +9,7 @@ import {Redirect,withRouter} from 'react-dom'
 class Form extends Component{
     constructor(props){
         super(props)
-        this.state={email:'',password:''}
+        this.state={matricula:'',password:''}
     }
 
 
@@ -38,7 +38,7 @@ class Form extends Component{
                     border='2px solid rgb(230, 233, 240)' 
                     radius ='10px' fsize='16px'
                     caret=':rgba(230, 233, 240, 1)'
-                    padding='0px 0px 0px' placeholder='email' name="email" onChange={this.handleChange} 
+                    padding='0px 0px 0px' label='matricula' name="matricula" onChange={this.handleChange} 
                     onFocus={(e)=> e.target.placeholder=""} onBlur={(e) => e.target.placeholder = "email"} ></Input>
                 </div>
                  <div style={{paddingTop:"6px"}} >
@@ -47,12 +47,12 @@ class Form extends Component{
                     border='2px solid rgb(230, 233, 240)' 
                     radius ='10px' fsize='16px'
                     caret=':rgba(230, 233, 240, 1)'
-                    placeholder='senha' name="password" onChange={this.handleChange} 
+                    label='senha' name="password" onChange={this.handleChange} 
                     onFocus={(e)=> e.target.placeholder=""} onBlur={(e) => e.target.placeholder = "senha"} ></Input>
                 </div>
                 <div>
                     <Button text="Login" color="#00bd56" width="80%" height='50px' fsize='16px'
-                     border="none" fontcolor="white" margin='13px 0px 0px 0px' Add={this.handleLogin} />
+                     border="none" fontcolor="white" margin='13px 0px 0px 0px' onClick={this.props.handleLogin} />
                 </div>
             </form>
         )
@@ -61,7 +61,7 @@ class Form extends Component{
 
 
 const Styledform = styled(Form)`
-        margin-top:12%;
+        margin-top:2%;
 `;
 
 

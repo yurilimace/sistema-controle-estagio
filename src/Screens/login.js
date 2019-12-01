@@ -12,22 +12,34 @@ import {faUserGraduate} from '@fortawesome/free-solid-svg-icons'
 class Login extends Component{
     constructor(props){
         super(props)
+        this.state = {islogged:' asdasd'}
         
     }
 
-   
+    handleLogin(){
+        console.log(this.state)
+      //  this.setState({...this.state,islogged:true})
+    }
 
     render(){
         return(
-            <div className={this.props.className} >
-               
-               <StyledIcon>
-                    <FontAwesomeIcon icon={faUserGraduate} size="10x" color="white" /> 
-                    <h3>  SCE </h3>
-               </StyledIcon>
-                <StyledDiv>
-                    <Form/>
-                </StyledDiv>
+            <div>
+              {(this.state.islogged) ?  
+              <div className={this.props.className} >
+              <StyledIcon>
+                   <FontAwesomeIcon icon={faUserGraduate} size="10x" color="white" /> 
+                   <h3>  SCE </h3>
+              </StyledIcon>
+               <StyledDiv style={{border:'1px solid red'}}>
+                   <Form handleLogin = {this.handleLogin} />
+               </StyledDiv>
+           </div>
+                :
+                <h2> 
+                    Teste
+                </h2>  
+            
+            }  
             </div>
         )
     }
@@ -48,9 +60,9 @@ display:inline-block;
 position:relative;
 
 text-align: center;
-right:5%
-margin-top: 1%;
-height: 300px;
+right:5%;
+top:4%;
+height: 250px;
 background-color:#faf5ef;
 border-radius: 10px;
 margin-top:22%;

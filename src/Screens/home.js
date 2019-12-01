@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,Component} from 'react'
 import styled from 'styled-components'
 import SideBar from '../Components/sideBar'
 import Input from '../Components/input'
@@ -13,12 +13,14 @@ const Home = (props)=>{
             <div >
                 <SideBar/>
             </div>
-            <div style={{border:'1px solid red',height:'100%',width:'100%'}}>
-                <Multi/>
+            <div style={{height:'100%',width:'100%'}}>
+               <Multi/>
             </div>
         </div>
     )
 }
+
+
 
 
 

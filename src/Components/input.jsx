@@ -3,12 +3,16 @@ import styled from 'styled-components'
 
 const Input = (props) => {
     return(
-        <input name={props.name} />
+        <div>
+            <span> {props.label}  </span>
+            <br/>
+            <input className={props.className} name={props.name} onChange={props.onChange} type = {props.type}  />
+        </div>
     )
 }
 
 
-const StyledInput = styled.input`
+const StyledInput = styled(Input)`
 width: ${props=>props.width};
 height: ${props=>props.height};
 margin-bottom: ${props=>props.margin};
@@ -28,6 +32,9 @@ padding-left:${props=>props.padding};
     //padding-left: 15px;
     text-indent: 30px;
 }
+
+&::-webkit-inner-spin-button { display: none; }
+
 
 `;
 
